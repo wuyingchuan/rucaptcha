@@ -64,9 +64,9 @@ static int letter(int n, int pos, unsigned char im[70*200], unsigned char swr[20
   int sk2=s2+pos;
   int mpos=pos;
   int row=0;
-  for(;*p!=-101;p++) {
+  for(;*p!=-48;p++) {
     if(*p<0) {
-      if(*p==-100) { r+=200; i=r; sk1=s1+pos; row++; continue; }
+      if(*p==-47) { r+=200; i=r; sk1=s1+pos; row++; continue; }
       i+=-*p;
       continue;
     }
